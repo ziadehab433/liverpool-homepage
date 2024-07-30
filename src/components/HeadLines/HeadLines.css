@@ -1,0 +1,25 @@
+.headLines-container { 
+    aspect-ratio: 20/9;
+    background-color: #DC0714;
+    width: 100%;
+    padding: 20px 80px 100px 80px;
+}
+
+.headLines-grid { 
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    direction: rtl;
+    row-gap: 20px;
+    aspect-ratio: 16/9;
+}
+
+@media (max-width: 775px) { 
+    .headLines-grid { 
+        grid-template-columns: 1fr;
+    }
+
+    .headLines-container { 
+        padding: 20px 0px 100px 0px;
+    }
+}

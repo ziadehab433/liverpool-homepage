@@ -1,0 +1,22 @@
+.community-container { 
+    background-color: #f6f6f6;
+    width: 100%;
+    padding: 60px 80px 100px 80px;
+}
+
+.community-grid { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    direction: rtl;
+    row-gap: 20px;
+}
+
+@media (max-width: 775px) { 
+    .community-grid { 
+        grid-template-columns: 1fr;
+    }
+
+    .community-container { 
+        padding: 20px 0px 100px 0px;
+    }
+}

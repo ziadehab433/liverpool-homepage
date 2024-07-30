@@ -1,0 +1,36 @@
+.fixtures-component-container { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    background-color: white;
+    padding: 80px 80px 100px 80px;
+}
+
+.fixtures-grid { 
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.add-fixtures-button { 
+    background-color: #FFD700;
+    color: black;
+    border: none;
+    height: 40px;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "oswald";
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+.add-fixtures-button > img { 
+    width: 20px;
+}

@@ -1,0 +1,56 @@
+.headLine-component-container-red { 
+    padding: 15px 15px 0px 15px;
+    transition: background-color 0.30s;
+}
+
+.headLine-component-container-white { 
+    padding: 15px 15px 0px 15px;
+    transition: background-color 0.30s;
+}
+
+.headLine-component-container-white:hover { 
+    background-color: rgb(240, 240, 240);
+}
+
+.headLine-component-container-red:hover { 
+    background-color: #cd0210;
+}
+
+.headLine-container { 
+    display: flex;
+    flex-direction: column;
+    direction: ltr;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.headLine-img { 
+    width: 100%;
+    object-fit: contain;
+}
+
+.headLine-time { 
+    color: rgb(182, 172, 172);
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+
+.headLine-text { 
+    padding-bottom: 5px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.stand { 
+    width: 100%;
+    border-bottom: 1px solid rgb(149, 149, 149);
+    font-weight: bold;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+@media (max-width: 775px) { 
+    .headLine-component-container { 
+        height: 550px;
+    }
+}

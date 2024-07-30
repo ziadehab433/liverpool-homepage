@@ -1,0 +1,61 @@
+.fixtures-container { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 400px;
+    height: 350px;
+    padding: 15px;
+    border: 1px solid rgb(189, 189, 189);
+}
+
+.fixtures-text > div:first-child { 
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.fixtures-text > div:nth-child(2) {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(84, 84, 84);
+}
+
+.fixtures-teamScore { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -15px;
+}
+
+.fixtures-team { 
+    width: 100%;
+}
+
+.fixtures-team > div { 
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+.fixtures-team > div > img{ 
+    margin-right: 10px;
+}
+
+.fixtures-team > div:nth-child(2) { 
+    width: 90%;
+    border: 0.5px solid rgb(194, 194, 194);
+}
+
+.fixtures-team img{ 
+    width: 30px;
+}
+
+.fixtures-score { 
+    background-color: #f6f6f6;
+    width: 80px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px;
+}

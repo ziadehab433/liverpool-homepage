@@ -1,0 +1,41 @@
+.header { 
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header > div:nth-child(2) { 
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.label-red { 
+    font-size: 14px;
+    padding: 5px 15px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: #B71515;
+}
+
+.label-white { 
+    font-size: 14px;
+    padding: 5px 15px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: black;
+}
+
+.more-red { 
+    font-size: 14px;
+    color: white;
+}
+
+.more-white { 
+    font-size: 14px;
+    color: #515956;
+}

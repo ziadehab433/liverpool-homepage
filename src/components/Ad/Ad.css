@@ -1,0 +1,35 @@
+.ad-component-container { 
+    padding: 15px 15px 0px 15px;
+    transition: background-color 0.30s;
+}
+
+.ad-container { 
+    padding: 20px 15px;
+    direction: ltr;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #00634D;
+    height: 100%;
+}
+
+.ad-component-container:hover { 
+    background-color: #cd0210;
+}
+
+.ad-container > div { 
+    color: white;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.ad-container span { 
+    font-size: 17px;
+    font-weight: 600;
+}
+
+
+.ad-container > img { 
+    width: 150px;
+    margin-left: 60%;
+}

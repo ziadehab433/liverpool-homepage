@@ -1,0 +1,22 @@
+.LFCwomen-container { 
+    background-color: #DC0714;
+    width: 100%;
+    padding: 60px 80px 100px 80px;
+}
+
+.LFCwomen-grid { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    direction: rtl;
+    row-gap: 20px;
+}
+
+@media (max-width: 775px) { 
+    .LFCwomen-grid { 
+        grid-template-columns: 1fr;
+    }
+
+    .LFCwomen-container { 
+        padding: 20px 0px 100px 0px;
+    }
+}

@@ -1,0 +1,29 @@
+.itemListing-container{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    height: 450px;
+    border: 1px solid rgb(205, 205, 205);
+}
+
+.itemListing-container img { 
+    width: 100%;
+    height: 260px;
+    object-fit: cover ;
+}
+
+.itemListing-container div:nth-child(2) { 
+    padding: 0px 15px 15px 15px;
+}
+
+.itemListing-price { 
+    font-size: 30px;
+    padding-bottom: 5px;
+}
+
+.itemListing-title { 
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(103, 103, 103);
+}

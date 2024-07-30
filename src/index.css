@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+main { 
+    padding-top: 150px;
+}
+
+@media (max-width: 1200px) { 
+    main { 
+        padding-top: 60px;
+    }
+}

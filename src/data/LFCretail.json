@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "img": "https://store.liverpoolfc.com/media/catalog/product/cache/24fcc958945d306f5645d5d707b50e77/f/n/fn8987g_1.jpg?width=1680",
+    "title": "LFC Nike Womens 24/25 Home Stadium Jersey",
+    "price": "£80.00"
+  },
+  {
+    "id": 2,
+    "img": "https://store.liverpoolfc.com/media/catalog/product/cache/24fcc958945d306f5645d5d707b50e77/f/n/fn8798g_1.jpg?width=1680",
+    "title": "LFC Nike Mens 24/25 Home Stadium Jersey",
+    "price": "£80.00"
+  },
+  {
+    "id": 3,
+    "img": "https://store.liverpoolfc.com/media/catalog/product/cache/24fcc958945d306f5645d5d707b50e77/f/n/fn9244g_1.jpg?width=1680",
+    "title": "LFC Nike Infants 24/25 Home Kit",
+    "price": "£47.00"
+  },
+  {
+    "id": 4,
+    "img": "https://store.liverpoolfc.com/media/catalog/product/cache/24fcc958945d306f5645d5d707b50e77/f/n/fn8776g_1.jpg?width=1680",
+    "title": "LFC Nike Mens 24/25 Home Match Jersey",
+    "price": "£125.00"
+  },
+  {
+    "id": 5,
+    "img": "https://store.liverpoolfc.com/media/catalog/product/cache/24fcc958945d306f5645d5d707b50e77/f/n/fn9066g_1.jpg?width=1680",
+    "title": "LFC Nike Youth 24/25 Home Match Jersey",
+    "price": "£100.00"
+  }
+]
