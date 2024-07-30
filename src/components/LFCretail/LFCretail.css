@@ -31,14 +31,11 @@
     justify-content: space-around;
     width: 100%;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 
 @media (max-width: 775px) { 
-    .LFCretail-grid { 
-        flex-wrap: wrap;
-    }
-
     .LFCretail-container { 
         padding: 20px 0px 100px 0px;
     }

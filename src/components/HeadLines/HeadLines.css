@@ -23,3 +23,9 @@
         padding: 20px 0px 100px 0px;
     }
 }
+
+@media (max-width: 1200px) { 
+    .headLines-container .ad-container > div{ 
+        font-size: 12px;
+    }
+}
