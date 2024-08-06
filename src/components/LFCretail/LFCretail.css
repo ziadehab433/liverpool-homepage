@@ -23,20 +23,33 @@
     padding: 15px;
     cursor: pointer;
     font-size: 14px;
+    color: gray;
+}
+
+.LFCretail-header > div:not(.selected):hover {
+    color: rgb(72, 72, 72);
+}
+
+.LFCretail-header .selected { 
+    color: black;
+    border-bottom: 1px solid red;
 }
 
 .LFCretail-grid { 
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
     gap: 20px;
-    flex-wrap: wrap;
 }
 
 
-@media (max-width: 775px) { 
+@media (max-width: 900px) { 
     .LFCretail-container { 
         padding: 20px 0px 100px 0px;
+    }
+
+    .LFCretail-grid {
+        flex-wrap: wrap;
     }
 }

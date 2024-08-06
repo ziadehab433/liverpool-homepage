@@ -1,0 +1,34 @@
+.localization-container { 
+    position: fixed;
+    background-color: white;
+    width: 400px;
+    right: calc(9% / 2);
+    z-index: 1000;
+    display: flex;
+    gap: 15px;
+    padding: 20px 10px;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+.localization-container > div:first-child { 
+    color :black;
+    padding: 0px 10px;
+}
+
+.localization-container > div:nth-child(2) { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.localization-container a { 
+    text-decoration: none;
+    color: rgb(54, 54, 54);
+    padding: 10px 10px;
+    transition: background-color 0.15s;
+
+}
+
+.localization-container a:hover { 
+    background-color: rgb(243, 243, 243);
+}

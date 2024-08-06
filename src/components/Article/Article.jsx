@@ -6,8 +6,8 @@ import articleData from "../../data/articleData.json";
 const Article = () => {
   return (
     <div className="article-component-container">
-      <HeaderBar label="HAVE YOU SEEN?" />
       <div className="article-container">
+      <HeaderBar label="HAVE YOU SEEN?" />
         <div>
           <div className="article-text">
             <span>INTERVIEW</span> How Conor Bradley returned for pre-season

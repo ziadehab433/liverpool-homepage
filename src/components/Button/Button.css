@@ -7,9 +7,9 @@
     font-family:"Oswald";
     text-align: left;
     padding-left: 20px;
-    transition: background-color 0.30s;
+    transition: opacity 0.30s;
 }
 
 .gen-button:hover { /* fix this stuff */
-    background-color: rgb(15, 12, 12);
+    opacity: 70%;
 }

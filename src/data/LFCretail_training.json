@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "img": "https://store.liverpoolfc.com/media/catalog/product/cache/24fcc958945d306f5645d5d707b50e77/f/v/fv6255-361-phsfm001.jpg?width=1680", 
+        "title": "LFC Nike Mens 24/25 Sports Bomber Jacket Green",
+        "price": "£80.00"
+    },
+    {
+        "id": 2,
+        "img": "https://store.liverpoolfc.com/media/catalog/product/cache/24fcc958945d306f5645d5d707b50e77/a/u/aurora_fn9653-393_phsfm001-2000.jpg?width=1680", 
+        "title": "LFC Nike Mens 24/25 Away Pre-Match Short Sleeve Top Washed Teal",
+        "price": "£55.00"
+    },
+    {
+        "id": 3,
+        "img": "https://store.liverpoolfc.com/media/catalog/product/cache/24fcc958945d306f5645d5d707b50e77/f/q/fq0004-393-phcfm001.jpg?width=1680", 
+        "title": "LFC Nike Youth 24/25 Away Anthem Jacket Teal",
+        "price": "£65.00"
+    },
+    {
+        "id": 4,
+        "img": "https://store.liverpoolfc.com/media/catalog/product/cache/24fcc958945d306f5645d5d707b50e77/h/f/hf0869-060-phsfm001.jpg?width=1680", 
+        "title": "LFC Nike Mens 24/25 Max90 Tee Black",
+        "price": "£35.00"
+    },
+    {
+        "id": 5,
+        "img": "https://store.liverpoolfc.com/media/catalog/product/cache/24fcc958945d306f5645d5d707b50e77/a/u/aurora_fq0013-393_phsfm001-2000.jpg?width=1680", 
+        "title": "LFC Nike Youth 24/25 Away Pre-Match Short Sleeve Top Washed Teal",
+        "price": "£50.00"
+    }
+]

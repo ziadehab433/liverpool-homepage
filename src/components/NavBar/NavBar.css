@@ -7,7 +7,7 @@ nav {
    align-items: center;
    justify-content: space-between;
    position: fixed;
-   z-index: 1;
+   z-index: 100;
 }
 
 .align-divs { 
@@ -32,11 +32,17 @@ nav {
 }
 
 .LFC-logo { 
-    height: 50px;
+    font-size: 36px;
+    font-family: ariel;
+    font-weight: 800;
+    color: white;
+    text-decoration:none;
+    padding: 20px;
 }
 
 .menu-icon { 
     height: 30px;
+    cursor: pointer;
 }
 
 .nav-options { 
@@ -46,6 +52,11 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    cursor: pointer;
+}
+
+.dropdown-container { 
+    position: relative;
 }
 
 .show-on-mobile { 
@@ -55,6 +66,7 @@ nav {
 @media (max-width: 775px) { 
     nav { 
         padding: 20px 20px;
+        width: 100%;
     }
 }
 
@@ -69,6 +81,5 @@ nav {
 
     nav { 
         height: 60px;
-        width: 100%;
     }
 }

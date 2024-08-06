@@ -1,0 +1,22 @@
+.memory-container { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+    padding: 50px 100px;
+}
+
+.memory-container img { 
+    width: 50%;
+}
+
+@media (max-width: 800px) { 
+    .memory-container { 
+        flex-wrap: wrap;
+    }
+
+    .memory-container img { 
+        width: 100%;
+    }
+}

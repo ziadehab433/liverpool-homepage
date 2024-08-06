@@ -12,8 +12,9 @@
     display: flex;
     gap: 20px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .add-fixtures-button { 

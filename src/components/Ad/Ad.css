@@ -1,35 +1,51 @@
-.ad-component-container { 
-    padding: 15px 15px 0px 15px;
-    transition: background-color 0.30s;
-}
-
-.ad-container { 
-    padding: 20px 15px;
-    direction: ltr;
+.small-ad { 
+    background-color: #f6f6f6;
+    width: 100%;
+    height: 210px;
+    margin-bottom: 80px;
+    overflow: hidden;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #00634D;
-    height: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
-.ad-component-container:hover { 
-    background-color: #cd0210;
+.big-ad { 
+    background-color: #f6f6f6;
+    padding: 0px 150px;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    overflow: hidden;
 }
 
-.ad-container > div { 
-    color: white;
-    font-size: 23px;
-    font-weight: 400;
+.big-ad > img:first-child { 
+    width: 75%;
 }
 
-.ad-container span { 
-    font-size: 17px;
-    font-weight: 600;
+.big-ad > img:nth-child(2) { 
+    width: 25%;
 }
 
+@media (max-width: 775px) { 
+    .small-ad { 
+        height: 110px;
+    }
+}
 
-.ad-container > img { 
-    width: 30%;
-    margin-left: 60%;
+@media (max-width: 1350px) { 
+    .big-ad { 
+        flex-wrap: wrap;
+        height: 700px;
+    }
+
+    .big-ad > img:first-child { 
+        width: 1000px;
+    }
+
+    .big-ad > img:nth-child(2) { 
+        width: 330px;
+    }
 }

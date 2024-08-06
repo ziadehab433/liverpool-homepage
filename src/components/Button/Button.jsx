@@ -2,7 +2,9 @@ import "./Button.css"
 
 const Button = ({ children, style }) => {
   return (
-    <button className="gen-button" style={style}>{ children }</button>
+    <a href=""> 
+      <button className="gen-button" style={style}>{ children }</button>
+    </a>
   )
 }
 

@@ -1,0 +1,144 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -400px; 
+  width: 400px;
+  height: 100vh;
+  background-color: white;
+  transition: left 0.3s ease-in-out; 
+  z-index: 1000;
+  overflow-y: auto;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar.open {
+  left: 0; 
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: #DC0714;
+  font-family: arial;
+}
+
+.sidebar-logo {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: #DC0714;
+  font-size: 34px;
+  cursor: pointer;
+}
+
+.sidebar-language {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.sidebar-language .icon {
+  margin-right: 8px;
+}
+
+.sidebar-menu a {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  border-bottom: 1px solid #e0e0e0;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.sidebar-menu a:hover {
+  background-color: #f5f5f5;
+}
+
+.sidebar-join {
+  background-color: #d01317;
+  color: white;
+  padding: 20px;
+  margin: 10px 20px;
+  height: 240px;
+}
+
+.sidebar-join h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.sidebar-join p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.sidebar-join a {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 140px 30px 20px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+}
+
+.sidebar-join button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.sidebar-login {
+  padding: 20px;
+  font-size: 14px;
+}
+
+.sidebar-login a {
+  color: #d01317;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.sidebar-social {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.sidebar-social img {
+  width: 30px; 
+  height: 30px;
+  cursor: pointer;
+}
+
+.sidebar-help { 
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 25px;
+}
+
+.sidebar-help > a { 
+    color: rgb(110, 110, 110);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.sidebar-help > a:hover { 
+    color: #DC0714;
+}
+
+.sidebar-help > div:first-Child { 
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(62, 62, 62);
+}
