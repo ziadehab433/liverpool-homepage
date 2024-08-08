@@ -1,6 +1,6 @@
 import "./index.css";
 import HomePage from "./pages/HomePage"
-import LoginPage from "./pages/LoginPage"
+import LoginPage from "./pages/LoginPage/LoginPage"
 import RegistrationPage from "./pages/RegistrationPage"
 import ContactPage from "./pages/ContactPage"
 import NewsPage from "./pages/NewsPage"

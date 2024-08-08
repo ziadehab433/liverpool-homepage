@@ -1,0 +1,129 @@
+.login-container { 
+    width: 100%;
+    background-color: #DC0714;
+    padding: 0px 20px 20px 20px;
+}
+
+.login-nav { 
+    background-color: #DC0714;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 35px;
+}
+
+.login-nav a { 
+    color: white;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.login-nav > div { 
+    color:#DC0714;
+}
+
+.login-nav span { 
+    font-weight: 400;
+}
+
+.login-nav img { 
+    width: 70px;
+}
+
+.login-header { 
+    width: 100%;
+    background-color: #F5F5F5;
+    text-align: center;
+    padding: 70px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.login-header h1 { 
+    color: #DC0714;
+    font-weight: 400;
+    font-family: "oswald";
+    font-size: 40px;
+}
+
+.login-header p { 
+    color: #554A49;
+    font-size: 14px;
+    max-width: 700px;
+}
+
+.login-header a { 
+    color: #DC0714;
+    text-decoration: underline;
+}
+
+.login-box { 
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 80px 0px;
+}
+
+.login-box > div:not(.login-captcha) { 
+    position: relative;
+}
+
+.login-box input { 
+    height: 40px;
+    width: 300px;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+
+.login-box label { 
+    font-size: 10px;
+    color: rgb(36, 36, 36);
+    font-weight: 400;
+    background-color: white;
+    position: absolute;
+    padding: 0px 5px;
+    top: -8px;
+    left: 10px
+}
+
+.login-box input:focus { 
+    border: 1px solid #DC0714;
+    outline: none;
+}
+
+.login-box a { 
+    font-size: 12px;
+    color:#DC0714;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.login-captcha { 
+    background-color: gray;
+    width: 300px;
+    height: 80px;
+}
+
+.login-box button { 
+    width: 300px;
+    height: 40px;
+    color: #A6A6A8;
+    background-color: #E0E0E0;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.login-box { 
+    color: #50504F;
+    font-weight: 400;
+    font-size: 12px;
+}

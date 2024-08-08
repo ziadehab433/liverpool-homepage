@@ -65,8 +65,7 @@ nav {
 
 @media (max-width: 775px) { 
     nav { 
-        padding: 20px 20px;
-        width: 100%;
+        padding: 20px 20px !important;
     }
 }
 
