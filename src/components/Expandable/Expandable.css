@@ -1,0 +1,31 @@
+.expandable-section {
+  padding: 10px 0px;
+  width: 100%;
+}
+
+.expandable-section .bar { 
+  width: 100%;
+  border-bottom: 1px solid gray;
+  margin-top: 40px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.section-header:hover h2{ 
+  color: #DC0714;
+}
+
+.toggle-icon {
+  font-size: 18px;
+  color: #DC0714;
+}
+
+.section-content {
+  margin-top: 10px;
+  padding-top: 10px;
+}

@@ -3,18 +3,10 @@ import facebookLogo from "../../assets/icons/facebookLogoBlack.png";
 import Button from "../Button/Button";
 import { useState } from "react";
 
-const NavSubItems = ({ children }) => {
-  const [style, setStyle] = useState({top: "120px"})
-  window.addEventListener("scroll", () => { 
-    if (window.scrollY >= 150) { 
-      setStyle({top: "72px"})
-    }else { 
-      setStyle({top: "120px"})
-    }
-  });
+const NavSubItems = ({ children, onMouseLeave }) => {
 
   return (
-    <div className="nav-sub-items-container" style={style}>
+    <div className="nav-sub-items-container" onMouseLeave={onMouseLeave}>
       <div className="top-section">
 
         {children}

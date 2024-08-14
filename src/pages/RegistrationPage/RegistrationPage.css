@@ -1,0 +1,381 @@
+.join-container { 
+    width: 100%;
+    background-color: #DC0714;
+    padding: 0px 20px 20px 20px;
+}
+
+.join-nav { 
+    background-color: #DC0714;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 35px;
+}
+
+.join-nav a { 
+    color: white;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.join-nav > div { 
+    color:#DC0714;
+}
+
+.join-nav span { 
+    font-weight: 400;
+}
+
+.join-nav img { 
+    width: 70px;
+}
+
+.join-header { 
+    width: 100%;
+    background-color: #F5F5F5;
+    text-align: center;
+    padding: 70px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.join-list p{ 
+    color: rgb(104, 104, 104);
+    font-size: 14px;
+    max-width: 440px;
+    font-weight: 400;
+}
+
+.join-header h1 { 
+    color: #DC0714;
+    font-weight: 400;
+    font-family: "oswald";
+    font-size: 40px;
+}
+
+.join-header > p { 
+    color: #554A49;
+    font-size: 14px;
+    max-width: 440px;
+    padding: 0px 50px;
+}
+
+.join-header a { 
+    color: #DC0714;
+    text-decoration: underline;
+}
+
+.join-box { 
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 80px 0px;
+}
+
+.join-grid { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 50px;
+}
+
+.join-grid > div{ 
+    position: relative;
+}
+
+.join-grid .tip { 
+    grid-column: span 2;
+    background-color: #f5f5f5;
+    color: rgb(75, 75, 75);
+    font-size: 10px;
+    font-weight: 400;
+    border-radius: 2px;
+    padding: 20px;
+    margin-top: -30px;
+}
+
+.join-grid .tip > p:first-child { 
+    color: black;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.join-box input ,
+.join-box select{ 
+    height: 40px;
+    width: 300px;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 5px;
+    padding: 0px 10px;
+    background-color: white;
+    outline: none;
+}
+
+.join-box label { 
+    font-size: 10px;
+    color: rgb(36, 36, 36);
+    font-weight: 400;
+    background-color: white;
+    position: absolute;
+    padding: 0px 5px;
+    top: -8px;
+    left: 10px
+}
+
+.join-box input:focus ,
+.join-box select:focus{ 
+    border: 1px solid #DC0714;
+    outline: none;
+}
+
+.join-box a { 
+    font-size: 12px;
+    color:#DC0714;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.join-captcha { 
+    background-color: gray;
+    width: 300px;
+    height: 80px;
+    margin-top: 30px;
+}
+
+.join-box > button {
+    width: 300px;
+    height: 40px;
+    color: #A6A6A8;
+    background-color: #E0E0E0;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.join-box { 
+    color: #50504F;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.join-captcha { 
+    background-color: gray;
+    width: 300px;
+    height: 80px;
+}
+
+.get-more { 
+    width: 620px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.get-more > div:first-child { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.get-more-text { 
+    font-size: 11px;
+}
+
+.get-more-text h3,
+.get-more-text p ,
+.manage > p { 
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.get-more-options { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    width: 300px;
+}
+
+.get-more-options > button:first-child ,
+.get-more-options > button:nth-child(2) { 
+    background-color: white;
+    color: #DC0714;
+    border: 5px solid #DC0714;
+    width: 100%;
+    height: 50px;
+}
+
+.get-more-options-regular-button { 
+    background-color: white;
+    color: #DC0714;
+    border: 5px solid #DC0714;
+    width: 100%;
+    height: 50px;
+    transition: background-color 0.25s;
+}
+
+.get-more-options-colored-button { 
+    background-color: #AC0510;
+    color: white;
+    border: 5px solid #AC0510;
+    width: 100%;
+    height: 50px;
+    transition: background-color 0.25s;
+}
+
+.manage-open { 
+    background-color: #DC0714;
+    color: white;
+    border: 5px solid #DC0714;
+    width: 80px;
+    height: 50px;
+}
+
+.TOC {
+    width: 100%;
+    font-size: 10px;
+    color: gray;
+}
+
+.TOC a { 
+    color: rgb(82, 82, 82);
+    font-size: 10px;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.manage-grid { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 40px;
+    margin-bottom: 20px;
+}
+
+.manage-second-grid { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 40px;
+}
+
+.slider-card { 
+    width: 100%;
+    min-height: 70px;
+    background-color: #fafafa;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider-card > div { 
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+}
+
+.special-h4 { 
+    padding: 20px 0px 20px 0px;
+}
+
+.slider-card h3 { 
+    font-size: 11px;
+    margin-bottom: -5px;
+}
+
+.slider-card p { 
+    line-height: 25px;
+    max-width: 220px;
+}
+
+.slider-card .special-p { 
+    max-width: 500px;
+}
+
+@media( max-width: 960px ) { 
+    .join-nav a ,
+    .join-nav > div{ 
+        font-size: 11px;
+    }
+}
+
+@media( max-width: 750px ) { 
+    .join-container { 
+        padding: 0px 0px 20px 0px;
+        height: 100vh;
+    }
+
+    .join-nav { 
+        padding: 10px 10px;
+    }
+
+    .join-nav a ,
+    .join-nav > div{ 
+        font-size: 8px;
+    }
+
+    .join-grid { 
+        grid-template-columns: 1fr;
+        width: 100%;
+        row-gap: 30px;
+        padding: 0px 20px;
+    }
+
+    .join-box input ,
+    .join-box select{ 
+        width: 100%;
+    }
+
+    .join-grid .tip { 
+        grid-column: span 1;
+        margin-top: 0;
+    }
+    
+    .get-more { 
+        width: 100%;
+        padding:  0px 20px;
+    }
+
+    .get-more-options { 
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+
+    .get-more-options > button { 
+        width: 100%;
+    }
+
+    .get-more-options > button:nth-child(3) { 
+        grid-column: span 2;
+    }
+
+    .get-more > div:first-child { 
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+    }
+
+    .get-more-text h3,
+    .get-more-text p ,
+    .manage > p { 
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .manage-grid , 
+    .manage-second-grid { 
+        grid-template-columns: 1fr;
+    }
+}

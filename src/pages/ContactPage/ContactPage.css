@@ -1,0 +1,185 @@
+.contact-page-container { 
+    background: linear-gradient(to bottom, #B71515 0px, #B71515 90px, #DC0714 90px , #DC0714 100%);
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-header { 
+    background-color: #DC0714;
+    padding: 80px 80px 20px 80px;
+    color: white;
+}
+
+.contact-header span { 
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.contact-body { 
+    background-color :white;
+}
+
+.contact-options {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    list-style: none;
+    padding: 0px 80px;
+}
+
+.contact-options > div {
+    padding: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    color: gray;
+}
+
+.contact-options > div:not(.selected):hover {
+    color: rgb(72, 72, 72);
+}
+
+.contact-options .selected { 
+    color: black;
+    border-bottom: 1px solid red;
+}
+
+.contact-email-form , 
+.contact-us , 
+.supporter-services ,
+.ways-to-contact{ 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 0px 50px 0px ;
+}
+
+.contact-us >*  ,
+.supporter-services > *,
+.ways-to-contact > *{
+    max-width: 680px;
+}
+
+.supporter-services , 
+.ways-to-contact{ 
+    background-color: #f6f6f6;
+}
+
+.supporter-services h2 ,
+.ways-to-contact h2{ 
+    width: 100%;
+    font-weight: 400;
+    color: rgb(46, 46, 46);
+    margin-bottom: 20px;
+}
+
+.oh-list { 
+    width: 100%;
+}
+
+.oh-list p { 
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: rgb(41, 41, 41);
+}
+
+.oh-list ul { 
+    padding-left: 20px;
+    margin-bottom: 20px;
+    color: rgb(112, 112, 112);
+    font-size: 13px;
+}
+
+.match-day-oh { 
+    color: rgb(75, 75, 75);
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.match-day-oh span { 
+    color: rgb(27, 27, 27);
+    font-size: 15px;
+}
+
+.ways-container h3{ 
+    color :rgb(17, 17, 17);
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.ways-container p { 
+    color :rgb(75, 75, 75);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.ways-container a { 
+    color: #DC0714;
+    text-decoration: underline;
+}
+
+.contact-us span { 
+    color: #DC0714;
+    text-decoration: underline;
+}
+
+.contact-us h3{ 
+    color: rgb(71, 71, 71);
+    font-weight: 500;
+}
+
+.contact-us p { 
+    color: gray;
+    font-size: 18px;
+}
+
+.contact-email-form p { 
+    font-size: 20px;
+    font-weight: 400;
+    color: gray;
+    max-width: 650px;
+}
+
+.contact-email-form > div { 
+    width: 90%;
+    height: 800px;
+    background-color: rgb(231, 231, 231);
+}
+
+@media (max-width: 1200px) { 
+    .contact-header { 
+        padding: 20px 80px 20px 80px;
+    }
+}
+
+@media ( max-width:900px ) { 
+    .contact-header { 
+        padding: 20px 10px 20px 10px;
+        font-size: 11px;
+    }
+
+    .contact-header span { 
+        font-size: 25px;
+    }
+
+    .contact-options { 
+        padding: 0px 10px;
+    }
+}
+
+@media (max-width: 750px) { 
+    .contact-email-form , 
+    .contact-us , 
+    .supporter-services ,
+    .ways-to-contact{ 
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 50px 15px 50px 15px ;
+    }
+}

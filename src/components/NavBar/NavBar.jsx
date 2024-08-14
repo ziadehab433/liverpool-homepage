@@ -5,7 +5,7 @@ import arrowDown from "/src/assets/icons/arrowDown.png";
 import globe from "/src/assets/icons/globe.png";
 import standardChartered from "/src/assets/icons/standardChartered.png";
 import hamburgerMenu from "/src/assets/icons/hamburgerMenu.png";
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import LocalizationMenu from "../LocalizationMenu/LocalizationMenu";
 import NavSubItemsCon from "../NavSubItemsCon/NavSubItemsCon";
 import Overlay from "../Overlay/Overlay";
@@ -15,22 +15,13 @@ import SideBar from "../SideBar/SideBar";
 
 const NavBar = () => {
   const [smallLogo, setSmallLogo] = useState(false);
-  const [style, setStyle] = useState({ padding: "20px 110px" });
-
   const [activeItem, setActiveItem] = useState(null);
 
   window.addEventListener("scroll", () => {
-    if (window.scrollY >= 150) {
+    if (window.scrollY >= 50) {
       setSmallLogo(true);
-      setStyle({
-        padding: "15px 20px",
-        width: "91%",
-        left: "50%",
-        transform: "translateX(-50%)",
-      });
     } else {
       setSmallLogo(false);
-      setStyle({ padding: "20px 110px" });
     }
   });
 
@@ -166,7 +157,14 @@ const NavBar = () => {
       sub: [
         {
           label: "VIDEO",
-          subItems: ["LFCTV GO", "Matches", "Players", "Browse", "Playlists", "Live"],
+          subItems: [
+            "LFCTV GO",
+            "Matches",
+            "Players",
+            "Browse",
+            "Playlists",
+            "Live",
+          ],
         },
       ],
     },
@@ -184,95 +182,112 @@ const NavBar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
-    <div className="dropdown-container">
-      <nav style={style}>
-        <img
-          src={hamburgerMenu}
-          className="menu-icon show-on-mobile"
-          alt=""
-          onClick={() => setIsSidebarOpen(true)}
-        />
-        <div href="" className="hide-on-mobile">
-          {smallLogo ? (
+    <>
+      <nav
+        onMouseLeave={() => setActiveItem(null)} 
+      >
+        <div>
+          <img
+            src={hamburgerMenu}
+            className="menu-icon show-on-mobile"
+            alt=""
+            onClick={() => setIsSidebarOpen(true)}
+          />
+          <div href="" className="hide-on-mobile logo-div">
+            {smallLogo ? (
+              <Link to={"/"} className="LFC-logo">
+                {" "}
+                LFC{" "}
+              </Link>
+            ) : (
+              <Link to={"/"}>
+                <img
+                  className="logo"
+                  src="https://www.liverpoolfc.com/liverpoolfc_crest.png"
+                  alt="liverpool's logo"
+                />
+              </Link>
+            )}
+          </div>
+          <div href="" className="show-on-mobile">
             <a className="LFC-logo"> LFC </a>
-          ) : (
-            <img className="logo" src={logo} alt="liverpool's logo" />
-          )}
-        </div>
-        <div href="" className="show-on-mobile">
-          <a className="LFC-logo"> LFC </a>
-        </div>
-        <div className="nav-options hide-on-mobile">
-          {menuItems.map((item, index) => (
+          </div>
+          <div className="nav-options hide-on-mobile">
+            {menuItems.map((item, index) => (
+              <a
+                key={index}
+                onMouseEnter={() => setActiveItem(index)} 
+              >
+                {item.label}
+              </a>
+            ))}
+            <span>|</span>
+            <Link
+              to={"/register"}
+              style={{ textDecoration: "none", color: "white" }}
+              className="align-divs"
+            >
+              <img src={personIcon} className="icon" alt="" />
+              <span>JOIN</span>
+            </Link>
+            <Link
+              style={{ textDecoration: "none", color: "white" }}
+              to={"/login"}
+            >
+              LOGIN
+            </Link>
+            <span>|</span>
             <a
-              key={index}
+              className="align-divs"
               onClick={() => {
-                setActiveItem(index);
+                setLMisOpen(true);
               }}
             >
-              {item.label}
+              <img src={globe} className="icon" alt="" />
+              <span>EN</span>
+              <img src={arrowDown} className="icon" alt="" />
             </a>
-          ))}
-          <span>|</span>
-          <Link
-            to={"/register"}
-            style={{ textDecoration: "none", color: "white" }}
-            className="align-divs"
-          >
-            <img src={personIcon} className="icon" alt="" />
-            <span>JOIN</span>
-          </Link>
-          <Link
-            style={{ textDecoration: "none", color: "white" }}
-            to={"/login"}
-          >
-            LOGIN
-          </Link>
-          <span>|</span>
-          <a
-            className="align-divs"
-            onClick={() => {
-              setLMisOpen(true);
-            }}
-          >
-            <img src={globe} className="icon" alt="" />
-            <span>EN</span>
-            <img src={arrowDown} className="icon" alt="" />
-          </a>
-          <span>|</span>
-          <img src={standardChartered} className="standardChartered" alt="" />
+            <span>|</span>
+            <img src={standardChartered} className="standardChartered" alt="" />
+          </div>
+          <img
+            src={standardChartered}
+            className="standardChartered show-on-mobile"
+            alt=""
+          />
         </div>
-        <img
-          src={standardChartered}
-          className="standardChartered show-on-mobile"
-          alt=""
-        />
+
+        <div>
+          {(LMisOpen && activeItem == null) && (
+            <>
+              <Overlay closeFunc={() => setLMisOpen(false)} />
+              <LocalizationMenu />
+            </>
+          )}
+          {activeItem !== null && (
+            <>
+              <NavSubItemsCon
+                onMouseLeave={() => setActiveItem(null)}>
+                {menuItems[activeItem].sub.map((item, index) => {
+                  return (
+                    <NavSubItems
+                      key={index}
+                      label={item.label}
+                      items={item.subItems}
+                    />
+                  );
+                })}
+              </NavSubItemsCon>
+              <Overlay closeFunc={closeNSI} />
+            </>
+          )}
+        </div>
       </nav>
 
-      {LMisOpen && (
-        <Overlay closeFunc={() => setLMisOpen(false)}>
-          <LocalizationMenu />
-        </Overlay>
-      )}
-      {activeItem !== null && (
-        <Overlay closeFunc={closeNSI}>
-          <NavSubItemsCon>
-            {menuItems[activeItem].sub.map((item, index) => {
-              return (
-                <NavSubItems
-                  key={index}
-                  label={item.label}
-                  items={item.subItems}
-                />
-              );
-            })}
-          </NavSubItemsCon>
-        </Overlay>
-      )}
-
       <SideBar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
-    </div>
+    </>
   );
 };
 
-export default NavBar;
+export default NavBar 
+              ;

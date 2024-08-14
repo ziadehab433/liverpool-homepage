@@ -2,7 +2,7 @@
     aspect-ratio: 20/9;
     background-color: #DC0714;
     width: 100%;
-    padding: 20px 80px 100px 80px;
+    padding: 40px 80px 100px 80px;
 }
 
 .headLines-grid { 
@@ -24,6 +24,10 @@
 }
 
 @media (max-width: 1200px) { 
+    .headLines-container { 
+        margin-top: -100px;
+    }
+
     .headLines-container .ad-container > div{ 
         font-size: 12px;
     }

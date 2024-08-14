@@ -1,36 +1,40 @@
 import "./index.css";
-import HomePage from "./pages/HomePage"
-import LoginPage from "./pages/LoginPage/LoginPage"
-import RegistrationPage from "./pages/RegistrationPage"
-import ContactPage from "./pages/ContactPage"
-import NewsPage from "./pages/NewsPage"
-import { createBrowserRouter, RouterProvider, createRoutesFromElements } from "react-router-dom"
+import HomePage from "./pages/HomePage";
+import LoginPage from "./pages/LoginPage/LoginPage";
+import RegistrationPage from "./pages/RegistrationPage/RegistrationPage";
+import ContactPage from "./pages/ContactPage/ContactPage";
+import NewsPage from "./pages/NewsPage/NewsPage";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  createRoutesFromElements,
+} from "react-router-dom";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <HomePage />
-  }, 
-  { 
+    element: <HomePage />,
+  },
+  {
     path: "/login",
-    element: <LoginPage />
+    element: <LoginPage />,
   },
-  { 
+  {
     path: "/register",
-    element: <RegistrationPage />
+    element: <RegistrationPage />,
   },
-  { 
+  {
     path: "/contact",
-    element: <ContactPage />
+    element: <ContactPage />,
   },
-  { 
+  {
     path: "/news",
-    element: <NewsPage />
-  }
-])
+    element: <NewsPage />,
+  },
+]);
 
 const App = () => {
-  return <RouterProvider router={router} />
+  return <RouterProvider router={router} />;
 };
 
 export default App;

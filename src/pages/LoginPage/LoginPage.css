@@ -53,6 +53,7 @@
     color: #554A49;
     font-size: 14px;
     max-width: 700px;
+    padding: 0px 50px;
 }
 
 .login-header a { 
@@ -67,7 +68,7 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding: 80px 0px;
+    padding: 80px 0px 200px 0px;
 }
 
 .login-box > div:not(.login-captcha) { 
@@ -126,4 +127,28 @@
     color: #50504F;
     font-weight: 400;
     font-size: 12px;
+}
+
+@media( max-width: 960px ) { 
+    .login-nav a ,
+    .login-nav > div{ 
+        font-size: 11px;
+    }
+}
+
+@media( max-width: 750px ) { 
+    .login-container { 
+        padding: 0px 0px 20px 0px;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .login-nav { 
+        padding: 10px 10px;
+    }
+
+    .login-nav a ,
+    .login-nav > div{ 
+        font-size: 8px;
+    }
 }

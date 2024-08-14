@@ -120,7 +120,7 @@
     text-align: center;
 }
 
-.show-on-mobile { 
+.links .show-on-mobile { 
     display: none;
 }
 
@@ -157,7 +157,7 @@
         height: 100%;
     }
 
-    .show-on-mobile { 
+    .links .show-on-mobile { 
         display: block;
     }
 

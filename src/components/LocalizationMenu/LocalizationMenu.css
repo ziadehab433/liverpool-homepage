@@ -9,6 +9,8 @@
     padding: 20px 10px;
     flex-direction: column;
     font-size: 15px;
+    position: absolute;
+    top: 60px;
 }
 
 .localization-container > div:first-child { 

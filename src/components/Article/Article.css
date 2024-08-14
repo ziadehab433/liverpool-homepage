@@ -1,7 +1,7 @@
 .article-component-container { 
     background-color: white;
     width: 100%;
-    padding: 0px 20% 80px 20%;
+    padding: 80px 20% 80px 20%;
     height: 1800px;
     position: relative;
 }
@@ -50,7 +50,7 @@
     grid-template-columns: 400px;
     position: absolute;
     bottom: 100px;
-    right: calc((9% / 2) - 15px);
+    right: calc((9% / 2) - 6px);
 }
 
 @media (max-width: 1200px) { 

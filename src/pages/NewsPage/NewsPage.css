@@ -1,0 +1,107 @@
+.small-ad { 
+    height: 120px;
+}
+
+.news-page-container { 
+    background: linear-gradient(to bottom, #B71515 0px, #B71515 90px, white 90px , white 100%);
+    padding-top: 10px;
+}
+
+.news-page-grid { 
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0px 80px;
+}
+
+.news-page-grid > div:first-child { 
+    grid-column: span 2;
+}
+
+.news-page-container .filter { 
+    height: 60px;
+    width: calc(100% - (95px * 2));
+    margin: 0px 95px 10px 95px;
+    border-bottom: 1px solid rgb(207, 207, 207);
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 20px;
+    position: sticky;
+    top: 60px;
+    background-color: white;
+}
+
+.news-page-container .filter > div:first-child {
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+.filter-dropdown { 
+    background-color: white;
+    border: none;
+    font-family: "oswald";
+    color: rgb(99, 99, 99);
+    font-weight: bold;
+    display: flex;
+    gap: 5px;
+    padding: 5px 20px;
+    cursor: pointer;
+    position: sticky;
+}
+
+.filter-dropdown > div:nth-child(2) { 
+    display: none;
+}
+
+.filter-dropdown-open { 
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: rgb(99, 99, 99);
+    cursor: pointer;
+    padding: 5px 20px;
+    box-shadow: 0px 0px 5px 1px rgb(182, 182, 182);
+    width: 300px;
+    height: fit-content;
+    background-color: white;
+    line-height: 40px;
+}
+
+.filter-dropdown-open h4 { 
+    color: rgb(184, 184, 184);
+}
+
+.filter-dropdown-open p { 
+    color: rgb(68, 68, 68);
+}
+
+.filter-dropdown-open p:hover { 
+    color: #DC0714;
+    text-decoration: underline;
+}
+
+.news-page-container .filter img { 
+    width: 20px;
+}
+
+@media (max-width: 1200px) { 
+    .news-page-container .filter { 
+        width: calc(100% - (10px * 2));
+        margin: 20px 10px 40px 10px;
+    }
+}
+
+@media (max-width: 775px) { 
+    .news-page-grid { 
+        grid-template-columns: 1fr;
+        padding: 0px 10px;
+    }
+
+    .news-page-grid > div:first-child { 
+        grid-column: span 1;
+    }
+}

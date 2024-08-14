@@ -2,17 +2,9 @@ import { useState } from "react";
 import "./LocalizationMenu.css"
 
 const LocalizationMenu = () => {
-  const [style, setStyle] = useState({top: "120px"})
-  window.addEventListener("scroll", () => { 
-    if (window.scrollY >= 150) { 
-      setStyle({top: "72px"})
-    }else { 
-      setStyle({top: "120px"})
-    }
-  });
 
   return (
-    <div className="localization-container" style={style}>
+    <div className="localization-container">
         <div>SELECT YOUR LANGUAGE</div>
         <div>
             <a href="">DEUTSCH</a>
