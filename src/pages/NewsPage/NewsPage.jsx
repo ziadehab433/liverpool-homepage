@@ -47,6 +47,7 @@ const NewsPage = () => {
   for (let i = 0; i < 2; i++) {
     randomNum.push(Math.floor(Math.random() * 20));
   }
+  console.log(randomNum);
 
   return (
     <>
@@ -79,7 +80,7 @@ const NewsPage = () => {
             return (
               <div
                 className={
-                  index in randomNum
+                  randomNum.includes(index)
                     ? "headlineCard-container headlineCard-double"
                     : "headlineCard-container"
                 }

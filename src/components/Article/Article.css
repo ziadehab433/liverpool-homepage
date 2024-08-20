@@ -4,6 +4,7 @@
     padding: 80px 20% 80px 20%;
     height: 1800px;
     position: relative;
+    z-index: 1;
 }
 
 .article-component-container .header { 
@@ -19,6 +20,7 @@
     background-color: #f6f6f6;
     position: sticky;
     top: 200px;
+    z-index: 1;
 }
 
 .article-container img { 

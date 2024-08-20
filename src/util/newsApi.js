@@ -1,4 +1,4 @@
-const API_KEY = '0977a35315b646ad86fe74a28668f750';
+const API_KEY = '078c2d85b30fb53f6105458366f8ff43';
 const URL = 'https://api.mediastack.com/v1/news?countries=gb&categories=sports';
 let REQUEST_LIMIT = 20;
 let request_offset = REQUEST_LIMIT;
@@ -24,6 +24,7 @@ export async function fetchNews(limit) {
 
 async function fetchSomeNews(limit, offset) {
     const url = URL + `&access_key=${API_KEY}&limit=${limit}&offset=${offset}`;
+    console.log(url);
 
     try {
         const response = await fetch(url);
