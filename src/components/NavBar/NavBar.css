@@ -39,9 +39,6 @@ nav > div:nth-child(2) {
     z-index: 100000 !important;
 }
 
-.logo-div { 
-}
-
 .icon { 
     height: 20px;
     width: auto;

@@ -14,8 +14,12 @@
     padding: 0px 80px;
 }
 
-.news-page-grid > div:first-child { 
+.headlineCard-double { 
     grid-column: span 2;
+}
+
+.headlineCard-container { 
+    width: 100%;
 }
 
 .news-page-container .filter { 

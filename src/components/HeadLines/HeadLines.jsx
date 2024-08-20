@@ -2,14 +2,35 @@ import "./HeadLines.css";
 import HeaderBar from "../HeaderBar/HeaderBar";
 import HeadLineCard from "../HeadLineCard/HeadLineCard";
 import AdCard from "../AdCard/AdCard";
-import headLineData from "/src/data/headLines.json";
+import { useState, useEffect } from "react";
+import { fetchNews } from "../../util/newsApi";
 
 const HeadLines = () => {
+  const [news, setNews] = useState([]);
+
+  useEffect(() => {
+    const getNews = async () => {
+      try {
+        const data = await fetchNews(5);
+        setNews(data);
+      } catch (error) {
+        console.error("Error fetching news:", error);
+      }
+    };
+
+    getNews();
+  }, []);
+
   return (
     <div className="headLines-container">
-      <HeaderBar label="HEADLINES" more="ALL NEWS >" variant="red" linkTo="/news"></HeaderBar>
+      <HeaderBar
+        label="HEADLINES"
+        more="ALL NEWS >"
+        variant="red"
+        linkTo="/news"
+      ></HeaderBar>
       <div className="headLines-grid">
-        {headLineData.map((headLine, index) => {
+        {news.map((headLine, index) => {
           return <HeadLineCard key={index} headLine={headLine} variant="red" />;
         })}
 

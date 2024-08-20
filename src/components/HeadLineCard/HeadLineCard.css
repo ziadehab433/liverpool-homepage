@@ -48,7 +48,8 @@
 
 .headLine-img { 
     width: 100%;
-    object-fit: contain;
+    aspect-ratio: 13/7;
+    object-fit: cover;
     margin-bottom: 40px;
 }
 

@@ -2,14 +2,15 @@ import "./NewsPage.css";
 import Ad from "../../components/Ad/Ad";
 import NavBar from "../../components/NavBar/NavBar";
 import HeadLineCard from "../../components/HeadLineCard/HeadLineCard";
-import headLineData from "../../data/headLines.json";
 import Footer from "../../components/Footer/Footer";
 import Button from "../../components/Button/Button";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { fetchNews } from "../../util/newsApi";
 
 const NewsPage = () => {
   const [filterOpen, setFilterOpen] = useState(false);
   const [sWidth, setSWidth] = useState(2000);
+  const [news, setNews] = useState([]);
 
   var onresize = function (e) {
     setSWidth(document.body.clientWidth);
@@ -28,6 +29,24 @@ const NewsPage = () => {
       setFilterOpen(false);
     }
   };
+
+  useEffect(() => {
+    const getNews = async () => {
+      try {
+        const data = await fetchNews(20);
+        setNews(data);
+      } catch (error) {
+        console.error("Error fetching news:", error);
+      }
+    };
+
+    getNews();
+  }, []);
+
+  let randomNum = [];
+  for (let i = 0; i < 2; i++) {
+    randomNum.push(Math.floor(Math.random() * 20));
+  }
 
   return (
     <>
@@ -56,14 +75,22 @@ const NewsPage = () => {
         </div>
 
         <div className="news-page-grid">
-          {headLineData.map((headLine, index) => {
+          {news.map((headLine, index) => {
             return (
-              <HeadLineCard
-                key={index}
-                headLine={headLine}
-                variant="white"
-                horizontal={sWidth < 775 ? true : false}
-              />
+              <div
+                className={
+                  index in randomNum
+                    ? "headlineCard-container headlineCard-double"
+                    : "headlineCard-container"
+                }
+              >
+                <HeadLineCard
+                  key={index}
+                  headLine={headLine}
+                  variant="white"
+                  horizontal={sWidth < 775 ? true : false}
+                />
+              </div>
             );
           })}
         </div>
