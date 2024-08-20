@@ -11,6 +11,7 @@ const NewsPage = () => {
   const [filterOpen, setFilterOpen] = useState(false);
   const [sWidth, setSWidth] = useState(2000);
   const [news, setNews] = useState([]);
+  const [randomNum, setRandomNum] = useState([])
 
   var onresize = function (e) {
     setSWidth(document.body.clientWidth);
@@ -40,14 +41,14 @@ const NewsPage = () => {
       }
     };
 
+    let randomArr = [];
+    for (let i = 0; i < 2; i++) {
+      randomArr.push(Math.floor(Math.random() * 20));
+    }
+    setRandomNum(randomArr);
+
     getNews();
   }, []);
-
-  let randomNum = [];
-  for (let i = 0; i < 2; i++) {
-    randomNum.push(Math.floor(Math.random() * 20));
-  }
-  console.log(randomNum);
 
   return (
     <>
